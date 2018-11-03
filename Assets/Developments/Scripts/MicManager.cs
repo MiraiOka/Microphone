@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using uOSC;
 
 public class MicManager : MonoBehaviour {
@@ -25,6 +23,6 @@ public class MicManager : MonoBehaviour {
         {
             vol += Mathf.Abs(s);
         }
-        client.Send("", vol);
+        client.Send("", 1, vol);
 	}
 }
